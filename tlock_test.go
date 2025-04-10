@@ -13,8 +13,8 @@ import (
 	chain "github.com/drand/drand/v2/common"
 	"github.com/drand/drand/v2/crypto"
 	bls "github.com/drand/kyber-bls12381"
-	"github.com/drand/tlock"
-	"github.com/drand/tlock/networks/http"
+	"github.com/JonathanLogan/tlock"
+	"github.com/JonathanLogan/tlock/networks/http"
 
 	"github.com/stretchr/testify/require"
 )

@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"filippo.io/age/armor"
-	"github.com/drand/tlock"
-	"github.com/drand/tlock/networks/http"
+	"github.com/JonathanLogan/tlock"
+	"github.com/JonathanLogan/tlock/networks/http"
 )
 
 var ErrInvalidDurationFormat = errors.New("unsupported duration type or malformed duration - note: drand can only support as short as seconds")

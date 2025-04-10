@@ -8,9 +8,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/drand/tlock"
-	"github.com/drand/tlock/cmd/tle/commands"
-	"github.com/drand/tlock/networks/http"
+	"github.com/JonathanLogan/tlock"
+	"github.com/JonathanLogan/tlock/cmd/tle/commands"
+	"github.com/JonathanLogan/tlock/networks/http"
 )
 
 func main() {

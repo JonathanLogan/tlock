@@ -68,7 +68,6 @@ func NewNetwork(host string, chainHash string) (*Network, error) {
 	if err != nil {
 		return nil, fmt.Errorf("getting client information: %w", err)
 	}
-
 	sch, err := crypto.SchemeFromName(info.Scheme)
 	if err != nil {
 		return nil, ErrNotUnchained

@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/drand/tlock/networks/http"
+	"github.com/JonathanLogan/tlock/networks/http"
 )
 
 const (

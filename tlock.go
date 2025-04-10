@@ -8,6 +8,7 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"log"
 	"time"
 
 	"filippo.io/age"
@@ -139,11 +140,13 @@ func TimeLock(scheme crypto.Scheme, publicKey kyber.Point, roundNumber uint64, d
 	if publicKey.Equal(publicKey.Null()) {
 		return nil, ErrInvalidPublicKey
 	}
-
 	id := scheme.DigestBeacon(&chain.Beacon{
 		Round: roundNumber,
 	})
-
+	log.Printf("Scheme: %s\n", scheme.Name)
+	log.Printf("Round number: %d\n", roundNumber)
+	log.Printf("Network Public key: %s\n", publicKey.String())
+	log.Printf("ID %x\n", id)
 	var cipherText *ibe.Ciphertext
 	var err error
 	switch scheme.Name {

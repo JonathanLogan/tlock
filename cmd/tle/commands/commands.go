@@ -21,7 +21,7 @@ const (
 
 // =============================================================================
 
-const usage = `tlock v1.3.0 -- github.com/drand/tlock
+const usage = `tlock v1.3.0 -- github.com/JonathanLogan/tlock
 
 Usage:
 	tle [--encrypt] (-r round)... [--armor] [-o OUTPUT] [INPUT]
